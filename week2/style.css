@@ -1,0 +1,172 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+/* I set html default font-size value as 16px that makes it easy when I rem */
+html{
+    font-size:16px;
+    font-family: 'Bahianita', cursive;
+}
+
+body, html{
+    width: 100%;
+    height:100%;
+}
+
+header { 
+    background-image: url(http://www.gsfdcy.com/data/img/27/1430331-drone-wallpaper.jpg);
+    background-position: center;
+    height:23rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  main {
+    background-color:#B1A296;
+    background-image: url(https://i.pinimg.com/originals/03/4b/58/034b588b27ec7bc95cb7cb072da3fc60.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+h1, h2, h3, p {
+    text-align: center;
+ } 
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    animation-name: heading1;
+    animation-duration: 14s;
+}
+
+/* For bonus assignment animation */
+@keyframes heading1 {
+    25%  {background-color:yellow; left:200px; top:0px;  border: 0.25rem solid  #B8B8B8; border-radius: 30%;}
+    50%  {background-color:blue; color:white;left:200px; top:200px;border: 0.25rem solid  #B8B8B8;border-radius: 30%;}
+    75%  {background-color:green; left:0px; top:200px;border: 0.25rem solid  #B8B8B8;border-radius: 30%;}
+    100% {background-color:red; color:white;left:0px; top:0px;border: 0.25rem solid  #B8B8B8;border-radius: 30%;}
+  }
+
+h2 {
+    font-size:3rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    color:#4C4C4C;
+}
+
+h3 {
+    font-size:1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+p { 
+    font-size: 1rem;
+    padding:0.1rem; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+.grid-item img {
+    max-width:100%;
+    height:auto;
+    display: block;
+}    
+
+.grid-item:hover { 
+    box-shadow: 1px 1px 4px 4px #F11001;
+}
+   
+/* float part */
+
+#grid-floats {
+    overflow: hidden;
+}
+
+#grid-floats .grid-item{
+    position: relative;
+    float: left;
+    height: 48rem;
+    padding:1% ;
+    margin: 2% 2%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    border: 0.25rem solid  #4A4338;
+}
+
+#grid-floats::after{
+    content: "";
+    clear:both;
+    display:block;
+}
+
+/* flex part */
+
+#grid-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+ 
+#grid-flex .grid-item {
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 48rem;
+    padding:  1%;
+    margin: 2% 2%;
+    text-align: center;
+    border-radius: 10%;
+    background-color: white;
+    border: 0.25rem solid  #4A4338;
+}
+
+/* for laptops */
+
+@media (min-width:1025px ) {
+ 
+    .grid-item {
+        width: 21%;
+    }
+
+      .grid-item:nth-child(1) {
+        width: 46%;     
+    }
+    
+    p {
+        font-size: 1.3rem;
+    }
+ }
+
+/* for tablets */
+
+@media (min-width: 768px) and (max-width: 1024px) {       
+    .grid-item{
+        width: 29%;
+        }
+        .grid-item:nth-child(-n+2) {
+        width: 46%;
+        }  
+ }
+
+/* for mobile phones */
+
+@media (max-width: 767px) {       
+        
+    .grid-item {
+    width: 46%     
+    }
+
+    .grid-item:nth-child(1) {
+    width: 96%;
+    }
+        
+}
+

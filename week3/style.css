@@ -1,0 +1,747 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    width: 100%;
+    font-family: "RO Sans", Calibri, sans-serif;
+    font-size: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body, h2, h3, p,  ul,  li, a, div {   
+    border: 0;
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+    text-decoration: none;
+} 
+
+p {
+    color: #000;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*Header*/
+
+#header{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; 
+}
+    
+#header img {
+        display: inline-block;
+        padding: 0;
+        vertical-align: top;
+        margin: 0 0 0 50%;
+}
+
+
+/* the part with topnavigation bar ,search menu and background picture */
+
+
+#navigation-bar {
+    background-color: #01689B;
+    min-height: 70px;
+    }   
+
+#navigation-bar-menu {
+    flex-direction:row;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+.nav-home {
+    order: 1;
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: .03rem;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.nav-others {
+    display: flex;
+    flex-wrap: wrap;
+    order:2;
+}
+
+.nav-others a {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#navigation-bar a {
+    margin: 0 10px;
+    text-decoration:none;
+    color: white;
+}
+
+.nav-home a {
+    font-size: 1.375rem;
+}
+
+#navigation-bar a:hover{
+    text-decoration: underline;
+}
+
+#headerImage {
+    background: url("https://www.rijksoverheid.nl/binaries/large/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/strand-scheveningen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto; 
+    position: relative;
+}
+
+
+#headerImage-text {   
+    margin-right: auto;
+    margin-left: auto; 
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+/* search part */
+
+.search-bar input[type=text] {
+    padding: 13px 5px;
+    font-size: 1rem;
+    width: 80%;
+    float: left;
+    background: #FFF;
+    border:0;
+    height: 3rem;
+}
+
+.search-bar button {
+    height: 3rem;
+    float: left;
+    width: 20%;
+    background-color: black; 
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .8em 1.1em;
+    padding-bottom: .8em;
+    border: 0;
+}   
+
+  form.search-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.copyright {
+    position: absolute;
+    font-size: .8em;
+    bottom: 0;  
+}
+
+.showCopyright {
+    opacity: 1;
+}
+
+#headerImage p {
+    top: 300px;
+    left: 10px;
+    padding: 7px 0 0 18px;
+    line-height: 2.2;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*  Information about taxes and etc part */
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#editorialNavigation {
+    position: relative;
+    background-color: transparent;
+    padding-bottom: 30px;
+}
+
+#boxes-12 {
+    background-color: #F3F3F3;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4%;
+    padding-top:4%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#editorialNavigation-articles {
+    display: grid;
+}
+
+.twelvebox{
+padding-left:15px;
+padding-right: 15px;
+
+}
+
+h3 {
+    color: #01689b;
+    font-size: 1.45em;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3:hover{
+    text-decoration: underline;
+}
+
+/* Holiday , work and advertisement part*/
+
+#vacation-advertisement {
+    background-color: white;
+    display: grid;   
+    border-bottom: 1px solid #E1E1E1;    
+}
+
+#vacation-advertisement section {
+    width: 90%;
+}
+
+.vacation{
+    position: relative;
+}
+
+#black {
+    color:white;
+    width: calc(100% - 30px);
+    bottom: 120px;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    word-break: break-word;
+}
+
+/*news part*/
+
+#news-part {
+    display: grid;
+}
+
+.bcwhite{
+    background-color: white;
+}
+
+.more {
+    margin: -25px 0 25px 15px;
+    clear: both;
+    float: left;
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #01689b;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-decoration: none;
+    width: auto;
+}
+
+.more:visited {
+    color: #767676;
+}
+
+
+/* Aside part */
+
+#aside {
+    display: flex;
+    width: 100%;
+}
+
+#aside text {
+color:black;
+}
+.aside-sec{
+    width:100%;
+    border: 4px solid #cbd2e3;
+    padding: 15px 0;
+    justify-content: center;
+}
+.aside-center{
+    text-align: center;
+}
+
+/*Footer*/
+
+footer {
+    height: auto;
+    background-color: #01689b;
+}
+
+#footer-content {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.payoff {
+    margin: 5px;
+    padding: 5px;
+}
+
+.payoff span{
+    font-style: italic;
+    font-size: 1.75rem;
+}
+#footer-content div {
+    flex-grow: 5;
+}
+
+#footer-content section {
+    flex-grow: 2;
+}
+
+a.column {
+    font-weight: normal;
+}
+
+/*Languagaes part*/
+
+#lang-options {
+    height: auto;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#languages-options ul {
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap        
+}
+
+#languages-options ul li {
+    padding:0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #b2d7ee;
+    font-size: 0.85rem;
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+
+#languages-options ul li:nth-child(1) {
+    border: none;
+}
+
+.toptasknavigation {
+    background-color: white;
+    padding: 1%;
+}
+
+.toptasknavigation ul li::before {
+    content: '> ';
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.625rem;
+    color: #01689b;
+}
+
+.toptasknavigation ul li {
+    line-height: 1.625rem;
+    font-size: 1.125rem;
+    color: #01689b;
+    margin: 10px 10px 10px 20px;
+    font-weight: bold;
+}
+
+.toptasknavigation ul li a {
+    padding-left: 10px;
+}
+
+.toptasknavigation h2 {
+    line-height: 1.55rem;
+    font-size: 1.45rem;
+    margin: 20px;
+    font-weight: normal;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.column {
+    color: #fff;
+    padding:2px 0 2px 0;
+}
+
+.linka {
+    color: #01689b;
+}
+
+.payoff-between {
+    padding: 10px 0;
+}
+
+/* screen size >991 */
+
+@media (min-width: 992px) {
+
+    h3 {
+        font-size: 1.45em;
+        line-height: 1.2em; 
+    }
+   p {
+       
+        line-height: 1.375em;
+    }
+    
+    
+    a {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    h2.payoff.column {
+        font-size: 1.4rem;
+    }
+    .payoff ul li a{color:white;}
+
+    #headerImage-text { 
+        padding: 30px 0 70px 0;
+    }
+
+    #headerImage-text {
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-between;  
+    }
+
+    form {
+        width: 35%;
+    }
+
+    #editorialNavigation-articles {
+        grid-template-columns: auto auto auto auto;  
+        grid-gap: 1% 2%; 
+    }
+
+    #editorialNavigation-articles section {
+        padding: 10% 0;
+    }
+
+    #vacation-advertisement {
+        grid-template-columns: auto auto auto;
+        padding-bottom: 7%;
+        margin: 3% 0 3% 0; 
+    }
+
+    #news-part {
+        grid-gap: 2% 2%;
+        grid-template-columns: auto auto auto;
+    }
+
+    .news-part-section {
+        padding: 0 0 0 1%;
+        height: 550px;
+    }
+
+    #aside  {
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+
+    #aside section:nth-child(2) {
+        margin-left: 3rem;
+    }
+
+    #aside section {
+        max-width: 24rem;
+        min-height: 14rem;
+    }
+
+}
+
+/* screen sizes 768-991 */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    h3 {font-size: 1.23rem;
+        line-height: 1.31rem;
+        font-weight: bold;
+    }
+
+    .more{
+        margin-top: 0.6rem;
+    }
+    
+    a {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    
+    p{
+        font-size: 0.80rem;
+        line-height: 1.5rem;
+    }
+
+   
+    #headerImage-text { 
+        padding: 3% 0 7% 0;
+        margin: 0 1% 0 1%;
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-between;   
+    }
+
+    .toptasknavigation {
+        padding: 1%;
+    }
+
+    form {
+        width: 35%;
+    }
+    
+    #editorialNavigation-articles {
+        grid-template-columns: auto auto;  
+    }
+
+    #editorialNavigation-articles section {
+        padding: 1% 0 0 3%;
+    }
+
+    #vacation-advertisement {
+        grid-template-columns: auto auto;
+        padding-bottom: 7%;
+        margin: 7% 0 10% 1%; 
+    }
+    
+    #news-part {
+        grid-gap: 2% 2%;
+        grid-template-columns: auto auto;
+    }
+
+    .news-part-section {
+        padding: 0 0 0 1%;
+        height: 36rem;
+    }
+
+    #aside  {        
+        margin-top: 3rem;
+        padding-left: 1%;
+    }
+
+
+    #aside  {
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+
+    #aside  section:nth-child(2) {
+        margin-left: 3rem;
+    }
+
+}
+
+
+/* screen sizes 480-767 */
+
+@media (min-width: 480px) and (max-width: 767px) {
+    
+    h3 {
+        line-height: 1.55rem;
+        font-size: 1.25rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    p{
+        font-size: 0.80rem;
+        line-height: 1.5rem;
+    }
+
+
+    .nav-others {
+        display: none;
+    }
+
+    #headerImage-text{ 
+        padding: 3% 0 7% 0;
+        margin: 0 1% 0 1%;
+        display: flex;
+        flex-direction: column-reverse;    
+        justify-content: center;    
+    }
+    
+    form {
+        margin: 5px 1px;
+        width:100%;
+    }
+
+    .toptasknavigation {
+        padding: 1%;
+    }
+    
+    #editorialNavigation-articles {
+        grid-template-columns: auto;  
+    }
+
+    #editorialNavigation-articles section {
+        padding: 1% 0 0 3%;
+    }
+
+    #vacation-advertisement{
+        grid-template-columns: auto auto;
+        padding: 0 1% 7% 0;
+        margin: 7% 0 10% 1%; 
+    }
+    
+    #news-part {
+        grid-gap: 2% 2%;
+        grid-template-columns: auto auto;
+    }
+
+    .news-part-section {
+        padding: 0 0 2% 1%;
+        height: 840px;
+    }
+
+    #aside  {        
+        margin-top: 50px;
+        padding-left: 1%;
+    }
+
+    #aside  {
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+
+    #aside section:nth-child(2) {
+        margin-left: 45px;
+    }
+
+}
+
+/* screen <479 */
+
+@media (max-width: 479px)  {
+
+    h3 {
+        line-height: 1.55rem;
+        font-size: 1.25rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    p{
+        font-size: 0.80rem;
+        line-height: 1.5rem;
+    }
+
+    .nav-others {
+        display: none;
+    }
+
+    #headerImage-text { 
+        padding: 3% 0 7% 0;
+        margin: 0 1% 0 1%;
+        display: flex;
+        flex-direction: column-reverse;    
+        justify-content: center;    
+    }
+     
+    form {
+        margin: 5px 1px;
+    }
+
+    .toptasknavigation {
+        padding: 1%;
+    }
+    
+    #editorialNavigation-articles {
+        grid-template-columns: auto;  
+    }
+
+    #editorialNavigation-articles div {
+        padding: 1% 0 0 3%;
+    }
+
+    #vacation-advertisement {
+        grid-template-columns: auto;
+        padding: 0 1% 7% 0;
+        margin: 7% 0 10% 1%; 
+    }
+    
+    #news-part {
+        grid-gap: 1% 1%;
+        grid-template-columns: auto;
+    }
+
+    .news-part-section {
+        padding: 0 0 0 1%;
+        height: 1250px;
+    }
+
+    #aside {        
+        margin-top: 50px;
+        padding-left: 1%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #aside section {
+        margin: 5px;
+    }
+
+}
